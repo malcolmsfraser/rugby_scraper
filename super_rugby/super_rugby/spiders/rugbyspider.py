@@ -16,11 +16,12 @@ class RugbySpider(scrapy.Spider):
 
         for item in zip(date,home_team,home_team_score,away_team,away_team_score,):
             scrapped_info = {
-                'Home Team' : item[0],
-                'Home Team Score' : item[1],
-                'Away Team' : item[2],
-                'Away Team Score' : item[3],
-                'Match Date' : item[4],
+                'Match Date' : item[0],
+                'Home Team' : item[1],
+                'Home Team Score' : item[2],
+                'Away Team' : item[3],
+                'Away Team Score' : item[4],
+                
                 
             }
             yield scrapped_info
