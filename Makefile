@@ -3,8 +3,7 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv settings.py
-	python -m pytest -vv rugbyspider.py
+	pass
 	
 lint:
 	pylint --disable=R,C settings.py
