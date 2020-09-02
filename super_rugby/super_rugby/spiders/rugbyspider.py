@@ -2,8 +2,7 @@ import scrapy
 
 class RugbySpider(scrapy.Spider):
     name = 'rugby'
-    start_urls = ['https://www.superxv.com/results/2020-super-rugby-results/',
-    'https://www.superxv.com/results/2018-super-rugby-results/']
+    start_urls = ['https://www.superxv.com/results/2020-super-rugby-results/']
     
     def parse(self, response):
         home_team = response.css('td:nth-child(1) a').css('::text').extract()
