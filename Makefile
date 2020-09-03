@@ -8,7 +8,7 @@ test:
 lint:
 	pylint --disable=R,C super_rugby/super_rugby/settings.py
 		pylint --disable=R,C,W0221 super_rugby/super_rugby/spiders/rugbyspider.py
-			pylint --disable=R,C total_points.py
+			pylint --disable=R,C,no-value-for-parameter total_points.py
 	
 	
 all: install lint test
