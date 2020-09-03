@@ -10,7 +10,7 @@ def all_points(file):
     for i in range(len(all_matches)):
         total_points_scored[all_matches.iloc[i]['Home Team']] += all_matches.iloc[i]['Home Team Score']
         total_points_scored[all_matches.iloc[i]['Away Team']] += all_matches.iloc[i]['Away Team Score']
-        pass
+        
     result = [f'{team}: {score}' for team,score in total_points_scored.items()]
     result = '\n'.join(result)
     return result
@@ -23,7 +23,6 @@ def all_points(file):
 def call_all_points(file):
     results = all_points(file)
     print(results)
-    pass
 
 if __name__ == '__main__':
     call_all_points()
