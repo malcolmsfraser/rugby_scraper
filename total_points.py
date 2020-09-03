@@ -28,4 +28,5 @@ def call_all_points(file):
     print(results)
 
 if __name__ == '__main__':
+    # pylint --disable=no-value-for-parameter
     call_all_points()
