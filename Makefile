@@ -3,7 +3,7 @@ install:
 		pip install -r requirements.txt
 
 test:
-	pass
+	python -m pytest -vv test_call_all_points.py
 	
 lint:
 	pylint --disable=R,C super_rugby/super_rugby/settings.py
