@@ -15,7 +15,7 @@ SPIDER_MODULES = ['super_rugby.spiders']
 NEWSPIDER_MODULE = 'super_rugby.spiders'
 
 FEED_FORMAT = 'csv'
-FEED_URI = 'rugby.csv'
+#FEED_URI = 'rugby.csv'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'super_rugby (+http://www.yourdomain.com)'
 
