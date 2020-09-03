@@ -11,7 +11,10 @@ def all_points(file):
         total_points_scored[all_matches.iloc[i]['Home Team']] += all_matches.iloc[i]['Home Team Score']
         total_points_scored[all_matches.iloc[i]['Away Team']] += all_matches.iloc[i]['Away Team Score']
         
-    result = [f'{team}: {score}' for team,score in total_points_scored.items()]
+    result = [
+        f'{team}: {total_points_scored[team]}' for team in 
+        sorted(total_points_scored, key = total_points_scored.get, reverse = True)
+        ]
     result = '\n'.join(result)
     return result
 
