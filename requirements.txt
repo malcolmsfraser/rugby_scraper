@@ -2,3 +2,6 @@ pylint
 click
 pytest
 scrapy
+pandas
+numpy
+click
